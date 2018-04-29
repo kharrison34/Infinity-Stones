@@ -1,0 +1,32 @@
+header{
+    background-color: blue;
+}
+
+h1{
+    font-size: 50px;
+}
+
+p{
+    font-size: 20px;
+    
+}
+
+h4{
+    font-size: 30px;
+}
+
+.goalnumber{
+    background-color: green;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.winsloses{
+    background-color: fuchsia;
+}
+
+.totalscore{
+    background-color: red;
+}
