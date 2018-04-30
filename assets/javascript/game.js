@@ -1,4 +1,9 @@
-//a game with 4 crystals 
+// //a game with 4 crystals 
+// //a random target number is generated
+// // each crystal recieves a random # at the start of each game 
+// //click crystals to add up to the target number if hit you win if exceeds you lose 
+// // then restart game 
+
 //a random target number is generated
 // each crystal recieves a random # at the start of each game 
 //click crystals to add up to the target number if hit you win if exceeds you lose 
@@ -25,12 +30,12 @@ $(document).ready(function(){
 
     var counter = 0;
 
-    var numberOptions = [10,11];
-    var increment = numberOptions[Math.round(Math.random())];
+    // var numberOptions = [10,11];
+    // var increment = numberOptions[Math.round(Math.random())];
 
-    $(".gems").on("click", ".gempic", function(){
+    $(".gems").on("click", "#one", function(){
 
-        counter += 10;
+        counter = counter + num1
 
         alert("your new score is " + counter);
 
@@ -46,4 +51,71 @@ $(document).ready(function(){
         }
     });
 
+    $(".gems").on("click", "#two", function(){
+
+        counter = counter + num2
+
+        alert("your new score is " + counter);
+
+
+        if (counter === targetNumber){
+
+            alert("you win!");
+        }
+
+        else if (counter > targetNumber) {
+
+            alert("you lose!");
+        }
+    });
+
+    $(".gems").on("click", "#three", function(){
+
+        counter = counter + num3
+
+        alert("your new score is " + counter);
+
+
+        if (counter === targetNumber){
+
+            alert("you win!");
+        }
+
+        else if (counter > targetNumber) {
+
+            alert("you lose!");
+        }
+    });
+
+    $(".gems").on("click", "#four", function(){
+
+        counter = counter + num4
+
+        alert("your new score is " + counter);
+
+
+        if (counter === targetNumber){
+
+            alert("you win!");
+        }
+
+        else if (counter > targetNumber) {
+
+            alert("you lose!");
+        }
+    });
+
+
+
+
+    
+
 });
+
+
+
+
+
+
+
+    
